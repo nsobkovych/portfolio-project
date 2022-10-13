@@ -14,11 +14,16 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,700,0,0"
+    />
     <link rel="stylesheet" href="src/portfolio.css" />
     <title>Nataliya Sobkovych</title>
   </head>
   <body>
     <div class="container">
+      <!-- Navbar -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid ps-0 pe-0">
           <a class="navbar-brand" href="/">
@@ -40,7 +45,7 @@
             id="navbarMenu"
           >
             <div class="navbar-nav">
-              <a class="nav-link menu-item active" aria-current="page" href="#"
+              <a class="nav-link menu-item active" aria-current="page" href="/"
                 >Home</a
               >
               <a class="nav-link menu-item" href="#">About</a>
@@ -50,6 +55,7 @@
           </div>
         </div>
       </nav>
+      <!-- Presentation -->
       <section class="presentation d-flex align-items-center">
         <div class="presentation-content">
           <h1>
@@ -58,7 +64,9 @@
           </h1>
           <h2>A passionate UI/UX designer and Frontend developer</h2>
           <div class="link-buttons">
-            <div class="btn cta-btn-primary">Contact me</div>
+            <a href="#" class="btn cta-btn-primary" title="Contact me"
+              >Contact me</a
+            >
           </div>
         </div>
         <div
@@ -69,6 +77,88 @@
             alt="A woman coding on the laptop"
             class="illustration-img img-fluid"
           />
+        </div>
+      </section>
+      <div class="scroll-down">
+        <span class="material-symbols-rounded">
+          keyboard_double_arrow_down
+        </span>
+      </div>
+      <!-- Works -->
+      <section class="works my-3">
+        <div class="section-subtitle mb-2">
+          <span class="material-symbols-rounded"> horizontal_rule </span>
+          <span class="subtitle">Loved projects</span>
+        </div>
+        <h2>Works</h2>
+        <!-- Project 1 -->
+        <div class="row row-odd row-odd-first">
+          <div class="col-lg-6 text-center p-4">
+            <img
+              src="/img/forecast-project.png"
+              alt="Weather Forecast Project"
+              class="img-fluid project-img"
+            />
+          </div>
+          <div class="col-lg-6 p-4">
+            <h3 class="mb-3">Weather Forecast Project</h3>
+            <p class="mb-5">
+              Weather Forecast is a project based on pure Java Script and uses
+              API. Weather Forecast has a responsive layout.
+            </p>
+            <a href="#" class="btn btn-project" title="See the forecast project"
+              >See the forecast project
+              <span class="material-symbols-rounded btn-icon"> arrow_right_alt </span>
+            </a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="row row-pair">
+          <div class="col-lg-6 row-pair-note p-4">
+            <h3 class="mb-3">UI/UX design project</h3>
+            <p class="mb-5">
+              The UI/UX project includes all the steps of application
+              development. It includes UX research, the creation of schematic
+              application screens, interaction scenarios, the design of user
+              interfaces, the creation of application layouts, development of an
+              interactive prototype.
+            </p>
+            <a href="#" class="btn btn-project" title="See the forum project"
+              >See the UI/UX project
+              <span class="material-symbols-rounded btn-icon"> arrow_right_alt </span>
+            </a>
+          </div>
+          <div class="col-lg-6 row-pair-img text-center p-4">
+            <img
+              src="/img/ui-ux-project.png"
+              alt="UI/UX project"
+              class="img-fluid project-img"
+            />
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="row row-odd row-odd-last">
+          <div class="col-lg-6 text-center p-4">
+            <img
+              src="/img/forum-project.jpg"
+              alt="Web Development Forum"
+              class="img-fluid project-img"
+            />
+          </div>
+          <div class="col-lg-6 p-4">
+            <h3 class="mb-3">Web Development Forum Project</h3>
+            <p class="mb-5">
+              Web Development Forum is a project based on MEAN stack (MongoDB,
+              Express.js, AngularJS, Node.js). This implementation contains
+              modular code and a component-based application structure using
+              Angular 1.5 and ES6. It uses Gulp and a handful of Gulp plugins to
+              perform various tasks. The project has a responsive layout.
+            </p>
+            <a href="#" class="btn btn-project" title="See the forum project"
+              >See the forum project
+              <span class="material-symbols-rounded btn-icon"> arrow_right_alt </span>
+            </a>
+          </div>
         </div>
       </section>
     </div>
