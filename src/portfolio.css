@@ -3,6 +3,8 @@
   --primary-color-hover: rgba(240, 75, 75, 0.8);
   --secondary-color: rgba(78, 139, 177, 1);
   --secondary-color-hover: rgba(78, 139, 177, 0.9);
+  --bg-type-light: rgba(242, 240, 242, 0.7);
+  --bg-type-tint: rgba(230, 218, 222, 0.5);
 }
 
 html,
@@ -137,26 +139,28 @@ h3 {
 .subtitle {
   display: inline-block;
   margin-left: 24px;
+  text-transform: capitalize;
 }
 
-.row-odd {
-  background: rgba(242, 240, 242, 0.7);
+.bg-type-light {
+  background: var(--bg-type-light);
 }
 
-.row-odd-first {
+.bg-type-tint {
+  background: var(--bg-type-tint);
+}
+
+.row-first {
   border-radius: 4px 4px 0 0;
 }
 
-.row-odd-last {
+.row-last {
   border-radius: 0 0 4px 4px;
-}
-
-.row-pair {
-  background: rgba(230, 218, 222, 0.5);
 }
 
 .project-img {
   border-radius: 8px;
+  max-height: 400px;
 }
 
 .btn-project {
@@ -191,6 +195,28 @@ h3 {
 .about-photo {
   border-radius: 40px 4px;
   max-height: 500px;
+}
+
+/* Works Page */
+
+.works-subtitle {
+  margin: 48px 0 8px 0;
+}
+
+.works-item {
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.project-img-wrap {
+  margin-bottom: 36px;
+}
+
+.dev-works h2,
+.design-works h2 {
+  text-transform: capitalize;
 }
 
 /* Media Queries */
@@ -254,5 +280,9 @@ h3 {
     font-size: 16px;
     line-height: 27px;
     padding: 10px 20px;
+  }
+
+  .works-item {
+    width: 45%;
   }
 }
