@@ -66,6 +66,15 @@ h3 {
 
 /* Section Presentation*/
 
+/* .header {
+    background-image: url(../images/header/mobile_bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 22px;
+    padding-top: 22px;
+} */
+
 .presentation {
   flex-direction: row;
   padding: 110px 0;
@@ -150,6 +159,7 @@ h3 {
   background: var(--bg-type-tint);
 }
 
+
 .row-first {
   border-radius: 4px 4px 0 0;
 }
@@ -218,6 +228,39 @@ h3 {
 .design-works h2 {
   text-transform: capitalize;
 }
+
+/* Contact Page */
+
+.contact-wrap {
+  margin: 110px 0;
+}
+
+.link-email {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .15s ease-in-out;
+  vertical-align: middle;
+}
+
+.link-email:hover {
+  color: var(--primary-color-hover);
+}
+
+.link-social {
+ color: rgba(33, 37, 41, 0.8);
+ display: inline-block;
+ font-size: 32px;
+ margin: 0 16px;
+ transition: color .15s ease-in-out;
+}
+
+.link-social:hover {
+  color: rgba(33, 37, 41, 1);
+}
+
+
 
 /* Media Queries */
 
