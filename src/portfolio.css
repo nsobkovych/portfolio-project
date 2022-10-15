@@ -18,20 +18,20 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 40px;
   margin-bottom: 12px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 26px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -77,7 +77,7 @@ h3 {
 
 .presentation {
   flex-direction: row;
-  padding: 110px 0;
+  margin: 110px 0;
 }
 
 .presentation-content {
@@ -93,9 +93,6 @@ h3 {
   background-color: var(--primary-color);
   border-radius: 30px;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 8px 16px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -113,6 +110,43 @@ h3 {
 
 .btn.cta-btn-primary:focus-visible {
   color: var(--primary-color);
+}
+
+.cta-btn-secondary {
+  color: var(--primary-color);
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 30px;
+  font-weight: 800;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-btn-secondary:hover {
+  color: var(--primary-color-hover);
+  background-color: white;
+  border-color: var(--primary-color-hover);
+}
+
+.btn.cta-btn-secondary:active {
+  color: var(--primary-color);
+  background-color: white;
+  border-color: var(--primary-color);
+}
+
+.btn.cta-btn-secondary:focus-visible {
+  color: var(--primary-color);
+}
+
+.cta-btn-lg {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+}
+
+.cta-btn-sm {
+  font-size: 14px;
+  line-height: 27px;
+  padding: 8px 16px;
 }
 
 .presentation-img {
@@ -133,6 +167,7 @@ h3 {
 .btn-icon {
   color: white;
   font-size: 28px;
+  margin-left: 6px;
 }
 
 .btn.btn-project:active .btn-icon {
@@ -159,6 +194,10 @@ h3 {
   background: var(--bg-type-tint);
 }
 
+.works-row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .row-first {
   border-radius: 4px 4px 0 0;
@@ -200,6 +239,32 @@ h3 {
   color: var(--secondary-color);
 }
 
+/* Footer */
+
+.inquiry-box {
+  margin: 64px 0 48px;
+}
+
+.inquiry h3 {
+  text-transform: none;
+}
+
+.inquiry p {
+  margin-bottom: 0;
+}
+
+.link-social {
+  color: rgba(0, 0, 0, 0.55);
+  display: inline-block;
+  font-size: 28px;
+  padding: 0 16px;
+  transition: color 0.15s ease-in-out;
+}
+
+.link-social:hover {
+  color: var(--secondary-color-hover);
+}
+
 /* About Page */
 
 .about-photo {
@@ -232,15 +297,13 @@ h3 {
 /* Contact Page */
 
 .contact-wrap {
-  margin: 110px 0;
+  margin: 150px 0;
 }
 
 .link-email {
   color: var(--primary-color);
-  font-size: 24px;
-  font-weight: 700;
   text-decoration: none;
-  transition: color .15s ease-in-out;
+  transition: color 0.15s ease-in-out;
   vertical-align: middle;
 }
 
@@ -248,29 +311,54 @@ h3 {
   color: var(--primary-color-hover);
 }
 
-.link-social {
- color: rgba(33, 37, 41, 0.8);
- display: inline-block;
- font-size: 32px;
- margin: 0 16px;
- transition: color .15s ease-in-out;
+.link-email-text {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
-.link-social:hover {
-  color: rgba(33, 37, 41, 1);
+.mail-icon {
+  font-size: 24px;
 }
-
-
 
 /* Media Queries */
 
-@media (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .presentation,
+  .contact-wrap {
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 991.98px) {
   .row-pair-note {
     order: 2;
   }
 
   .row-pair-img {
     order: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .cta-btn-lg {
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 
@@ -313,12 +401,13 @@ h3 {
     padding: 24px 36px;
   }
 
-  .cta-btn-primary {
+  .cta-btn-lg {
     font-size: 24px;
     line-height: 36px;
     padding: 12px 24px;
   }
 
+  .cta-btn-sm,
   .btn-project {
     font-size: 16px;
     line-height: 27px;
@@ -326,6 +415,18 @@ h3 {
   }
 
   .works-item {
-    width: 45%;
+    width: 48%;
+  }
+
+  .link-email-text {
+    font-size: 24px;
+  }
+
+  .mail-icon {
+    font-size: 32px;
+  }
+
+  .link-social {
+    font-size: 32px;
   }
 }
