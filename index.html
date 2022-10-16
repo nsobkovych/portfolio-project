@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI/UX designer and Frontend developer - Nataliya Sobkovych</title>
+    <meta
+      name="description"
+      content="Nataliya Sobkovych is a Frontend engineer and a UI/UX designer."
+    />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -27,15 +32,14 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/portfolio.css" />
-    <title>Nataliya Sobkovych</title>
   </head>
   <body>
     <div class="container">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid ps-0 pe-0">
-          <a class="navbar-brand" href="/" title="Nataliya Sobkovych">
-            <img src="/img/ns.png" alt="NS" />
+          <a class="navbar-brand" href="/" title="Nataliya Sobkovych Homepage">
+            <img src="/img/ns.png" alt="Nataliya Sobkovych Logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -101,13 +105,23 @@
           <span class="material-symbols-rounded"> horizontal_rule </span>
           <span class="subtitle">Loved projects</span>
         </div>
-        <h2>Works</h2>
+        <div
+          class="works-nav d-flex justify-content-between align-items-center"
+        >
+          <h2>Works</h2>
+          <a href="/works.html" class="btn cta-btn-link" title="See all works">
+            See all works
+            <span class="material-symbols-rounded btn-icon">
+              arrow_right_alt
+            </span>
+          </a>
+        </div>
         <!-- Project 1 -->
         <div class="row works-row row-first bg-type-light">
           <div class="col-lg-6 text-center p-4">
             <img
               src="/img/forecast-project.png"
-              alt="Weather Forecast Project"
+              alt="Weather Forecast preview"
               class="img-fluid project-img"
             />
           </div>
@@ -118,7 +132,7 @@
               API. Weather Forecast has a responsive layout.
             </p>
             <a
-              href="#"
+              href="https://github.com/nsobkovych/weather-forecast"
               class="btn btn-project"
               target="_blank"
               title="See the forecast project"
@@ -141,10 +155,10 @@
               interactive prototype.
             </p>
             <a
-              href="#"
+              href="https://www.figma.com/file/RIe2EXNkvn8dRqcniLptdV/Nataliya---UX%2FUI-Master-Class-%E2%84%965-(flows)?node-id=0%3A1"
               class="btn btn-project"
               target="_blank"
-              title="See the forum project"
+              title="See the UI/UX project"
               >See the UI/UX project
               <span class="material-symbols-rounded btn-icon">
                 arrow_right_alt
@@ -154,7 +168,7 @@
           <div class="col-lg-6 row-pair-img text-center p-4">
             <img
               src="/img/b-list-app.png"
-              alt="UI/UX project"
+              alt="UI/UX project preview"
               class="img-fluid project-img"
             />
           </div>
@@ -164,7 +178,7 @@
           <div class="col-lg-6 text-center p-4">
             <img
               src="/img/forum-project.jpg"
-              alt="Web Development Forum"
+              alt="Web Development Forum preview"
               class="img-fluid project-img"
             />
           </div>
@@ -178,7 +192,7 @@
               perform various tasks. The project has a responsive layout.
             </p>
             <a
-              href="#"
+              href="https://github.com/nsobkovych/web-dev-forum"
               class="btn btn-project"
               target="_blank"
               title="See the forum project"
@@ -191,7 +205,7 @@
         </div>
       </section>
       <!-- Footer -->
-      <footer class="my-5">
+      <footer class="mt-5">
         <div
           class="inquiry-box d-flex justify-content-evenly align-items-center"
         >
@@ -209,16 +223,23 @@
           </div>
         </div>
         <div class="socials text-center">
-          <a href="#" target="_blank" class="link-social" title="Github"
+          <a href="https://github.com/nsobkovych" target="_blank" class="link-social" title="Github Profile"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="#" target="_blank" class="link-social" title="Linkedin"
+          <a href="https://www.linkedin.com/in/nataliya-sobkovych-727b68253/" target="_blank" class="link-social" title="Linkedin Profile"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-          <a href="#" target="_blank" class="link-social" title="Telegram"
+          <a href="https://t.me/nataliya_sobkovych" target="_blank" class="link-social" title="Telegram"
             ><i class="fa-brands fa-telegram"></i
           ></a>
         </div>
+        <div class="author-info d-flex flex-md-row justify-content-center">
+          <span class="copyright">&copy; Copyright 2022</span>
+          <span class="author">
+            Designed by Nataliya Sobkovych,
+            <a href="https://github.com/nsobkovych/portfolio-project" target="_blank" class="open-source">open-source</a>
+          </span>
+        </p>
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
